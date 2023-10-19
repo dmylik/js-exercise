@@ -127,3 +127,18 @@ function wr(){
 //         wr( 'Эдик это вообще ппц, а Андрей это диагнрос' );
 // }
 
+let test = {
+    dima: 'dima',
+    vity: 'vity',
+    max: 'max',
+    fn(){
+        console.log(Object.keys(this).filter(name => name!=='fn'))
+    },
+    ''(){
+        wr("Дурак ты кто??")
+    }
+
+}
+
+test.fn();
+test['']();
